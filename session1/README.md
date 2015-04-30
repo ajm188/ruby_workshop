@@ -829,3 +829,30 @@ class Student < Person
   end
 end
 ```
+
+## Your Turn!
+
+Probably the best way to learn a new language is to actually write stuff in it.
+So, I have a task for you:
+
+In [grades.csv](grades.csv), you'll find my grades from last semester. Clearly,
+I had a rough time in Calc I. I need to know what my GPA was, and I want you to
+write a Ruby program to calculate my GPA for me. To do this, we need a library
+that Ruby provides for parsing CSV files. If you look in
+[gpa_calc.rb](gpa_calc.rb), you'll find some skeleton code I've left to get you
+started. It loads in the CSV module (more on modules later), gets the name of
+the file from the command line arguments, and makes the correct call to the CSV
+module to load the data. Your code should go where the `TODO` comments are.
+
+### REPL-Driven Development
+
+If you are confused about how to interact with the data that the CSV library
+gives you, pop open an irb session and play around with the result of the CSV
+call in there. This should help you figure out how you want to handle and do
+calculations on the data. In fact, this style of development has become so
+popular that it has earned the name "REPL-Driven Development" (irb is a REPL,
+which stands for "read, evaluate, print loop"). This isn't really relevant to
+anything else we're talking about, but I'm just going to leave this information
+here. Do whatever you will with it.
+
+Solutions can be found in the 'solutions' branch of this repository.
