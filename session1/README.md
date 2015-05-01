@@ -1,5 +1,16 @@
 # Intro to Ruby
 
+## Table of Contents
+
+* [The Basics](#the-basics)
+* [Dynamic Typing and Objects](#dynamic-typing-and-objects)
+* [Basic Syntax](#basic-syntax)
+* [Expressions](#expressions)
+* [Ruby Types](#ruby-types)
+* [Methods](#methods)
+* [Classes](#classes)
+* [Your Turn!](#your-turn)
+
 ## The Basics
 
 ### An Interpreted Language
@@ -196,7 +207,7 @@ until i >= 5
 end
 ```
 
-#### Inline Modifiers
+#### Inline Modifiers for Loops
 
 Just like with if/unless, Ruby also allows inline while/until:
 
@@ -229,7 +240,7 @@ for char in ["a", "b", "c"] # this is an array
 end
 ```
 
-#### `case`
+### `case`
 
 You may know this as `switch` from other languages, `case` is a powerful part
 of the Ruby language.
@@ -431,7 +442,7 @@ the contents of the curly braces are evaluated as Ruby code. Then the result of
 calling `to_s` ("to string") on that is what gets put into the string in place
 of the `#{...}`.
 
-## Arrays
+### Arrays
 
 Arrays represent ordered collections of objects. The important thing to note
 here is that I did not say "objects of a specific type." In Ruby, arrays can
@@ -453,7 +464,7 @@ arr = [[1, :odd], [2, :even], [3, :odd]]
 Regardless, arrays have a lot of useful built-in methods that allow you to
 treat them like a variety of classical data structures:
 
-### Stack
+#### Stack
 
 ```ruby
 arr = [1, 2]
@@ -463,7 +474,7 @@ arr.pop() #=> 3
 arr #=> [1, 2]
 ```
 
-### Queue
+#### Queue
 
 ```ruby
 arr = [1, 2, 3]
@@ -474,7 +485,7 @@ arr.unshift(5) #=> [5, 2, 3]
 # to a stack. To get a FIFO queue, use shift with push.
 ```
 
-### Set
+#### Set
 
 ```ruby
 [1, 2, 3] & [3, 4, 5] #=> [3] (set intersection)
@@ -484,13 +495,13 @@ arr |= [3, 4, 5] #=> [1, 2, 3, 4, 5] (set union and assignment in one step!)
 arr #=> [1, 2, 3, 4, 5]
 ```
 
-### Matrix
+#### Matrix
 
 ```ruby
 [[1, 2], [3, 4], [5, 6]].transpose #=> [[1, 3, 5], [2, 4, 6]]
 ```
 
-## Hashes
+### Hashes
 
 Hashes are Ruby's hash table type (think Maps in Java). Hashes map a set of
 keys to a set of values:
